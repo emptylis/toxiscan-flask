@@ -1,0 +1,262 @@
+<html lang="en" data-bs-theme="light">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<!-- <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json"> -->
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      #btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+      
+    </style>
+
+  </head>
+
+  
+  <body>
+    <header>
+         <div class="px-3 py-2 text-bg-dark border-bottom">
+            <div class="container">
+             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <div class="toxiscan-container">
+                    <div class="toxiscan" style="font-size: 35px;">
+                        Toxiscan
+                    </div>
+                </div>
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+    
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <li>
+                     <a href="ugh2.html" class="nav-link text-secondary">
+                     <!-- <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg> -->
+                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="white" class="bi bi-house-door" viewBox="2 0 16 16">
+                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                      </svg>
+                      <br>
+                      <!-- <p style="font-size: 20px;">Home</p> -->
+                     </a>
+                     <p style="font-size: 20px;margin-right: 20px; color: grey;">Home</p>
+
+                    </li>
+                    <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="white" class="bi bi-question-diamond" viewBox="0 0 16 16">
+                            <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+                            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                          </svg>
+                          <br>
+                     <!-- <p style="font-size: 20px;">About Us</p> -->
+                     </a>
+                     <p style="font-size: 20px;margin-right: 20px;">About Us</p>
+
+                    </li>
+                    <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="white" class="bi bi-gear" viewBox="-1 0 16 16">
+                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                          </svg>
+                          <br>
+                          <!-- <p style="font-size: 20px;">Services</p> -->
+                    </a>
+                    <p style="font-size: 20px;margin-right: 20px;">Services</p>
+
+                    </li>
+                    <li>
+                         <a href="#" class="nav-link text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="white" class="bi bi-phone" viewBox="-2 0 16 16">
+                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                              </svg>
+                              <br>
+                              <!-- <p style="font-size: 20px;">Contact Us</p>  -->
+                    </a>
+                    <p style="font-size: 20px;">Contact Us</p>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div
+            class="backg"
+            style="background-image: url('https://wallpaperaccess.com/full/1462226.jpg');
+            background-size: cover; min-height:100vh; width: 100%;">
+  <div class="d-flex align-items-center py-0 bg-body-tertiary">
+
+</div>
+
+
+<form id="Mainform" class="w-25" style="margin-left: 40%; margin-top: 40px;">
+    <h2 class="mb-3" style="color: white;">Sign Up User</h2>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="emailInp" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="passwordInp" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="fnameInp" placeholder="name@example.com">
+        <label for="floatingInput">First Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="lnameInp" placeholder="Password">
+        <label for="floatingPassword">Last Name</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="btn-bd-primary" style="float: right;">Create New User</button>
+      <a href="/login"><button type="button" class="btn btn-primary me-2" id="btn-bd-primary" style="float: right;">Sign In</button></a> 
+
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+    import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCF_qzRKU4nGZVjpFf914VJRqYPMXiunYs",
+      authDomain: "toxiscan-auth-93f68.firebaseapp.com",
+      databaseURL: "https://toxiscan-auth-93f68-default-rtdb.firebaseio.com",
+      projectId: "toxiscan-auth-93f68",
+      storageBucket: "toxiscan-auth-93f68.appspot.com",
+      messagingSenderId: "1073172584733",
+      appId: "1:1073172584733:web:094f4ef8018a47ac59e9f4"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase();
+    const auth = getAuth(app);
+
+    let EmailInp = document.getElementById("emailInp");
+    let PassInp = document.getElementById("passwordInp");
+    let FnameInp = document.getElementById("fnameInp");
+    let LnameInp = document.getElementById("lnameInp");
+    let Mainform = document.getElementById("Mainform");
+
+    let RegisterUser = evt => {
+        evt.preventDefault();
+
+        createUserWithEmailAndPassword(auth, EmailInp.value, PassInp.value)
+            .then(async (credentials)=>{
+                set(ref(db, 'UsersAuthList/' + credentials.user.uid),{
+                  firstname: FnameInp.value,
+                  lastname: LnameInp.value
+                });
+            })
+            .catch((error)=>{
+                alert(error.message);
+                console.log(error.code);
+                console.log(error.message);
+            })
+        }
+
+        Mainform.addEventListener('submit', RegisterUser);
+
+
+  </script>
+
+</div>
+</header>
+    
+  
+</body>
+</html>
